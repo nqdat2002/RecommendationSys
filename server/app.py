@@ -10,7 +10,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-cred = credentials.Certificate(os.path.join(os.getcwd(), 'cred', 'credentials.json'))
+cred = credentials.Certificate('credentials.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
