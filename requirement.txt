@@ -1,0 +1,5 @@
+Flask==2.3.2
+firebase-admin==6.5.0
+Flask-CORS==4.0.1
+Werkzeug==2.3.4
+python-dotenv==1.0.1
