@@ -186,6 +186,7 @@ def get_recommendations():
         preferred_categories = [category for category, _ in sorted_preferences]
 
         recommended_articles = fetch_articles(preferred_categories)
+        print(preferred_categories)
 
         return jsonify(recommended_articles), 200
 
